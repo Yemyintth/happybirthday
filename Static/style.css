@@ -1,0 +1,120 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.letter {
+    position: relative;
+    animation: lyric 2s infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
+  @keyframes lyric {
+    0% {
+      color: red;
+      text-shadow: 0 0 0 red;
+    }
+    50% {
+      color: transparent;
+      text-shadow: 0 0 20px red;
+    }
+    100% {
+      color: red;
+      text-shadow: 0 0 0 re;
+    }
+  }
+
+.birthday-message {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0b0b;
+    margin-bottom: 20px;
+}
+
+.birthday-message-1{
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.balloons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.balloon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 20px;
+    margin: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.red {
+    background-color: #ff69b4;
+}
+
+.blue {
+    background-color: #45b3fa;
+}
+
+.yellow {
+    background-color: #f7dc6f;
+}
+
+.green {
+    background-color: #34c759;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 600px;
+  }
+   
+  span.heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.container-2{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-2 .box{
+    flex:1 0 10px;
+    height: 10px;
+}

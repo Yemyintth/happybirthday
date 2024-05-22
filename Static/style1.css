@@ -1,0 +1,89 @@
+body {
+    background: #fff;
+    background-size: cover;
+    height: 1500px;
+  }
+  
+  .t1{
+    margin-left:auto;
+    margin-right: auto;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+    height: 50px;
+    width: 500px;
+  }
+
+  .t1 .typed-out-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-size: 30px;
+    width: 0;
+    animation: 
+    typing 4s steps(40, end) forwards,
+    blink .8 linear ;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .container {
+    margin-top: 50px;
+    height: 300px;
+    width: 1000px;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: navajowhite;
+    background-size: cover;
+    font-family: 'Blippo', 'fantasy'; 
+  }
+ 
+.box{
+    flex: 1 0 150px;
+    height: 200px;
+}
+
+.typed-out {
+    padding-top: 20px;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    font-size: 20px;
+    width: 530px;
+    animation: 
+      typing 5s steps(20, end) forwards,
+      blink .8s;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+  }
+
+.container-2{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-2 .boxes{
+    flex:1 0 5px;
+    height: 5px;
+}
